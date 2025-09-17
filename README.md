@@ -1,48 +1,27 @@
-# Simple Port Scanner — Joshua-hub-tech
+# 🔍 Port Scanner
 
-**A small, beginner-friendly TCP port scanner written in Python.**
-Use this tool only on systems you own or have explicit permission to test.
+[![Python](https://img.shields.io/badge/python-3.9%2B-blue)](https://www.python.org/)
+[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+[![Issues](https://img.shields.io/github/issues/josh-hub-tech/port-scanner)](https://github.com/josh-hub-tech/port-scanner/issues)
+[![Forks](https://img.shields.io/github/forks/josh-hub-tech/port-scanner)](https://github.com/josh-hub-tech/port-scanner/network/members)
+[![Stars](https://img.shields.io/github/stars/josh-hub-tech/port-scanner)](https://github.com/josh-hub-tech/port-scanner/stargazers)
 
-## Features
-- Scans a list or range of TCP ports.
-- Uses threads for faster scanning.
-- Saves results to `example_output.txt`.
+A simple Python port scanner to detect open ports on a target host.
 
-## Files
-- `scanner.py` — the scanner script.
-- `example_output.txt` — sample output from a local scan.
-- `README.md` — this file.
-- `LICENSE` — MIT license.
-- `.gitignore` — ignores __pycache__.
+## 🚀 Usage
 
-## Usage (quick)
-1. Make sure you have Python 3.8+ installed.
-2. From a terminal, run:
-   ```bash
-   python3 scanner.py --host example.com --start 1 --end 1024 --threads 100
-   ```
-   Or scan specific ports:
-   ```bash
-   python3 scanner.py --host 192.168.1.10 --ports 22,80,443
-   ```
-
-## Notes & Responsible Use
-**Only** scan systems you own or have written permission to test. Unauthorized scanning can be illegal and unethical.
-Include this repository's URL in any reports and always follow a responsible disclosure policy.
-
-## Want this as a GitHub repo?
-1. Download the ZIP included with this project.
-2. Create a new repository on GitHub and upload the files (or push using git — see below).
-3. Pin the repo to your profile.
-
-### Git push example (if you want to use command-line git)
 ```bash
-git init
-git add .
-git commit -m "Initial commit — simple port scanner"
-git branch -M main
-git remote add origin git@github.com:Joshua-hub-tech/port-scanner.git
-git push -u origin main
+# Scan common ports (1-1024)
+python3 port_scanner.py example.com
+
+# Scan a custom range
+python3 port_scanner.py 192.168.1.1 -p 20-100
 ```
 
-If you prefer, I can generate the full repo with README and commits for you to copy-paste. Tell me which option you want next.
+## 📂 Project Structure
+- `port_scanner.py` → main script
+- `README.md` → documentation
+- `LICENSE` → license info
+
+## 🛡️ License
+This project is licensed under the MIT License.
