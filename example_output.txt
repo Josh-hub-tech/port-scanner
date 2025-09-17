@@ -1,0 +1,4 @@
+Sample output will vary by target. Example:
+[+] Port 22 open
+[+] Port 80 open
+Scan completed in 0:00:02.345678. Open ports: [22, 80]
